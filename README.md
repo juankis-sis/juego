@@ -2,7 +2,7 @@
 
 # Instalación
 ```
-git clone https://github.com/kfern/phaser-redux.git 
+git clone https://github.com/juankis-sis/juego.git
 cd phaser-redux
 npm install
 npm start
