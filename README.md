@@ -3,7 +3,7 @@
 # Instalación
 ```
 git clone https://github.com/juankis-sis/juego.git
-cd phaser-redux
+cd juego
 npm install
 npm start
 ```
