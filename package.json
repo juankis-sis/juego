@@ -1,0 +1,57 @@
+{
+  "name": "phaser-redux",
+  "version": "1.4.2",
+  "description": "A Phaser game with Redux",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack/prod.js ",
+    "start": "webpack-dev-server --config webpack/base.js --open",
+    "lint": "eslint --config .eslintrc.json \"src/**/*.js\"",
+    "test": "cross-env VISUAL=true jest --coverage",
+    "test:dev": "cross-env VISUAL=true jest --watch --coverage",
+    "test:logic": "jest --watch --coverage test/logic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfern/phaser-redux.git"
+  },
+  "author": "Fernando Navarro (http://www.github.com/kfern)",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "bugs": {
+    "url": "https://github.com/kfern/phaser-redux/issues"
+  },
+  "homepage": "https://github.com/kfern/phaser-redux#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^5.12.1",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "image-js": "^0.21.8",
+    "jest": "^24.9.0",
+    "jest-image-snapshot": "^2.11.1",
+    "jest-puppeteer": "^4.4.0",
+    "npm": "^6.13.6",
+    "puppeteer": "^2.0.0",
+    "raw-loader": "^3.1.0",
+    "terser-webpack-plugin": "^2.3.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "is-equal": "^1.5.5",
+    "phaser": "^3.21.0",
+    "redux-starter-kit": "^0.4.0",
+    "redux-watch": "^1.1.1"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "jest-puppeteer"
+  }
+}
